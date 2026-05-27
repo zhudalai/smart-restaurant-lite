@@ -1,8 +1,21 @@
 # Smart Restaurant POS 🍽️
 
-AI 增强的餐饮 POS 系统。PHP 8.4 + Laravel 13 + React 18 + MySQL 8 + OpenRouter API。
+AI 增强的餐饮 POS 系统。PHP 8.4 + Laravel 13 + React 18 + PostgreSQL + OpenRouter API。
 
 本项目完全由 AI 工具（Claude Code）辅助开发，PHP/JS/React 代码约 85% 由 AI 生成，开发时间从估计的 2-3 周压缩至 1 天。
+
+## 🌐 在线演示
+
+**公网地址**：https://smart-restaurant-lite.onrender.com
+
+| 页面 | URL | 说明 |
+|------|-----|------|
+| POS 界面 | [/pos](https://smart-restaurant-lite.onrender.com/pos) | 点餐 + 购物车 + 订单提交 |
+| 日报页面 | [/reports](https://smart-restaurant-lite.onrender.com/reports) | AI 生成的日语营业日报 |
+| 菜单 API | [/api/menus](https://smart-restaurant-lite.onrender.com/api/menus) | 菜单列表 JSON |
+| 订单 API | [/api/orders](https://smart-restaurant-lite.onrender.com/api/orders) | 订单列表 JSON |
+
+> 💡 直接点击上方链接即可体验，无需登录。
 
 ## 功能
 
@@ -17,7 +30,7 @@ AI 增强的餐饮 POS 系统。PHP 8.4 + Laravel 13 + React 18 + MySQL 8 + Open
 |---|------|
 | Backend | PHP 8.4, Laravel 13 |
 | Frontend | React 18, Tailwind CSS 4, Vite 8 |
-| Database | MySQL 8 |
+| Database | PostgreSQL (Render) / MySQL 8 (Docker) |
 | AI | OpenRouter API (Claude 3 Haiku) |
 | Infrastructure | Docker |
 
