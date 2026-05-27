@@ -3,6 +3,7 @@ FROM php:8.4-fpm
 # Install system deps, PHP extensions, nginx, nodejs
 RUN apt-get update && apt-get install -y \
     git unzip libpng-dev libonig-dev libxml2-dev libzip-dev \
+    libpq-dev libjpeg-dev libfreetype6-dev \
     nginx nodejs npm \
     && docker-php-ext-install pdo_mysql pdo_pgsql mbstring exif pcntl bcmath gd zip
 
