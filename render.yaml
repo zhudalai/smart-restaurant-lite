@@ -1,0 +1,40 @@
+services:
+  - type: web
+    name: smart-restaurant-lite
+    env: docker
+    plan: free
+    healthCheckPath: /api/menus
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: APP_KEY
+        value: base64:50aPA+Hz25ViTjODycXje1JCQCLWfHdzh5WrKtPdvnk=
+      - key: APP_URL
+        value: https://smart-restaurant-lite.onrender.com
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DB_SSLMODE
+        value: require
+      - key: SESSION_DRIVER
+        value: cookie
+      - key: CACHE_STORE
+        value: database
+      - key: QUEUE_CONNECTION
+        value: sync
+      - key: LOG_CHANNEL
+        value: stderr
+      # Set in Render Dashboard → Environment (not in repo)
+      # OPENROUTER_API_KEY=sk-or-v1-...
+      # OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
+      - key: DB_URL
+        fromDatabase:
+          name: smart-restaurant-db
+          property: connectionString
+
+databases:
+  - name: smart-restaurant-db
+    plan: free
+    databaseName: smart_restaurant
+    user: srl
