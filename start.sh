@@ -1,10 +1,10 @@
 #!/bin/sh
-set -e
 
-# Run migrations (with seed on first deploy)
 cd /var/www/html
-php artisan migrate --force 2>/dev/null || true
 
-# Start php-fpm and nginx
+# Auto-migrate on startup (no seed — seed data via seeder command)
+php artisan migrate --force --seed 2>/dev/null || echo "Migrate/seed skipped"
+
+# Start php-fpm and nginx in foreground
 php-fpm -D
-nginx -g 'daemon off;'
+exec nginx -g 'daemon off;'
