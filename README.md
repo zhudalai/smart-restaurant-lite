@@ -102,12 +102,11 @@ docker exec srl-app php artisan report:daily
 - [AI 使用日志](docs/ai-usage-log.md) — AI 加速量化、出错故事
 - [Prompt 迭代](docs/prompt-iterations.md) — AI 日报 Prompt 工程
 
-### 面试亮点
+### 亮点
 
 1. **全栈能力**：前后端 + 数据库 + AI 集成，一个人完成
 2. **AI 工具链**：Claude Code 作为主要开发工具，Prompt 迭代能力
 3. **日语输出**：AI 日报直接生成日语，N2 水平验证
-4. **CHIBIC 契合**：餐饮 POS 系统，与 CHIBIC 业务高度重叠
 
 ---
 
@@ -202,12 +201,11 @@ Key documents:
 - [AI Usage Log](docs/ai-usage-log.md) — Quantified AI acceleration, debugging stories
 - [Prompt Iterations](docs/prompt-iterations.md) — AI report prompt engineering
 
-### Interview Highlights
+### Highlights
 
 1. **Full-stack capability**: FE + BE + Database + AI integration, solo-built
 2. **AI toolchain**: Claude Code as primary development tool, prompt iteration skills
-3. **Japanese output**: AI generates business reports in Japanese, N2 proficiency verified
-4. **CHIBIC alignment**: Restaurant POS system directly matches CHIBIC's business domain
+3. **Japanese output**: AI generates business reports in Japanese
 
 ---
 
@@ -302,9 +300,8 @@ docker exec srl-app php artisan report:daily
 - [AI 使用ログ](docs/ai-usage-log.md) — AI 加速器の定量分析、デバッグ事例
 - [Prompt 反復](docs/prompt-iterations.md) — AI 日報用 Prompt エンジニアリング
 
-### 面接のポイント
+### ポイント
 
-1. **フルスタック能力**：フロントエンド + バックエンド + データベース + AI 統合、一人で開発
+1. **フルスタック能力**：フロントエンド + バックエンド + データベース + AI 統合
 2. **AI ツールチェーン**：Claude Code を主要開発ツールとして使用、Prompt 改善能力
-3. **日本語出力**：AI が日本語で営業日報を生成、N2 レベルを実証
-4. **CHIBIC との親和性**：レストラン POS システムは CHIBIC 事業と高度に一致
+3. **日本語出力**：AI が日本語で営業日報を生成
